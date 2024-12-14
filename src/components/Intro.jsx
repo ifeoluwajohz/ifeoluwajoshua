@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/style.css'
 import emoji from '../assets/emoji.png'
-import IMG_1 from '../assets/IMG_1.jpg'
 
 
 const Intro = () => {
@@ -17,6 +16,7 @@ const Intro = () => {
     setSuccess(null);  // Reset success message
 
     try {
+      setIsLoading(true)
       const response = await fetch('https://portfolio-backend-ce6g.onrender.com/subscribe', {
         method: 'POST',
         headers: {
@@ -32,6 +32,7 @@ const Intro = () => {
       // Reset the form fields after successful submission
       setEmail('');
       setSuccess('Thanks for Subscribing!');  // Set success message
+      setIsLoading(false)
     } catch (err) {
       setError(err.message);
     } finally {
@@ -45,17 +46,17 @@ const Intro = () => {
             <div className='quotes'>
               <div className="">
 
-              <div className="flex mb-4 items-center">
+              <div className="flex items-center">
               <h1 className="font-bold  text-yellow-500 text-4xl">Hello Mate,  </h1>
               <img className="w-10 h-10" src={emoji} alt="" />
               {/* <img className="w-10 h-10" src={IMG_1} alt="" /> */}
 
               </div>
 
-              <h1 className="me font-bold mb-4"> I'm Ifeoluwa Joshua a Web Designer and a Full Stack <span>Web Developer</span></h1>
+              <h1 className="me font-light mb-8"> I am <span>Isreael Ifeoluwa Joshua</span></h1>
 
               </div>
-                <p className="text-xl">-"Hi, I am Joshua a Web Developer based in Lagos, Nigeria. I help brands turn their ideas into high quality products ..."</p>
+                <p className="text-lg font-normal">-"An Experienced Software Developer | Expert in React, TypeScript, Node.js, and Django | Specializing in Intuitive UI Design & Scalable Backend Systems | Bridging Frontend & Backend for Seamless Digital Solutions based in Lagos, Nigeria. I help brands turn their ideas into high quality products ..."</p>
             </div>
             {/* <div className='quotes'>
               <img src={IMG_1} alt="" />

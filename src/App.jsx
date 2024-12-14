@@ -36,7 +36,7 @@ function App() {
             to="/approach"
             className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
           >
-            My Approach
+            Experiences
           </NavLink>
           <NavLink
             to="/projects"
@@ -46,7 +46,7 @@ function App() {
           </NavLink>
         </div>
         <Routes>
-          <Route path="/" element={<Navigate to="/approach" />} />
+          <Route path="/" element={<Navigate to="/about" />} />
           <Route path="/about" element={<About />} />
           <Route path="/approach" element={<Approach />} />
           <Route path="/projects" element={<Projects />} />

@@ -8,19 +8,20 @@ import whatsapp from '../assets/whatsapp.png';
 import linkedin from '../assets/linkedin.png';
 import Resume from '../assets/Resume.pdf';
 
+
 const About = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(null);  // New state for success message
+  const [success, setSuccess] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
-    setSuccess(null);  // Reset success message
+    setSuccess(null);
 
     try {
       const response = await fetch('https://portfolio-backend-ce6g.onrender.com/dm_me', {
@@ -35,11 +36,10 @@ const About = () => {
         throw new Error('Something went wrong with the submission');
       }
 
-      // Reset the form fields after successful submission
       setName('');
       setEmail('');
       setMessage('');
-      setSuccess('Your message has been sent successfully!');  // Set success message
+      setSuccess('Your message has been sent successfully!');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -60,27 +60,62 @@ const About = () => {
   return (
     <div>
       <div className="words mb-16">
-        <h1 className="job text-5xl mt-12 font-semibold mb-12">About <span className="text-purple-500 underline">Joshua</span>.</h1>
+        <h1 className="job text-5xl mt-12 font-semibold mb-8">About <span className="text-green-500">Me.</span></h1>
         <p className="text-base leading-8 mb-16">
-          Hello! I'm Israel Ifeoluwa Joshua, a passionate <span className="text-green-500">Full stack developer</span> with a love for crafting clean, efficient code. With <span className="text-orange-700 underline">4 years</span> of experience in web development, I thrive in dynamic environments where I can apply my skills in both <span className="text-blue-600">Frontend</span> and <span className="text-red-500">Backend</span> technologies.<br />I specialize in creating responsive, user-friendly web applications that offer seamless experiences across devices. Whether it's building robust APIs or designing intuitive user interfaces.
+          I am Israel Ifeoluwa Joshua, a passionate software developer with expertise in frontend and backend technologies, including React, HTML, CSS, TailwindCSS, JavaScript, Node.js, Django, and TypeScript. I specialize in creating user-centric interfaces and scalable backend systems, delivering high-performance applications that exceed client expectations. With a strong problem-solving foundation, I bridge the gap between frontend and backend, ensuring seamless integration and functionality. <br />
+          My experience spans collaborating with cross-functional teams, contributing to all stages of development, and delivering solutions that drive business success.
         </p>
-
-        <div className="social-links flex my-6">
-          <a href="https://x.com/ifeoluwajohz"><img src={x} alt="" /></a>
-          <a href="https://github.com/johzcodes"><img src={github} alt="" /></a>
-          <a href="https://www.linkedin.com/in/ifeoluwajohz/"><img src={linkedin} alt="" /></a>
-          <a href="https://mail.google.com/mail/u/0/#inbox"><img src={email} alt="" /></a>
-          <a href="tel:+8026144324"><img src={whatsapp} alt="" /></a>
-          <a href="https://web.facebook.com/profile.php?id=100087388999705"><img src={facebook} alt="" /></a>
-        </div>
-
       </div>
+
+      {/* Education Section */}
+      <div className="education mb-16">
+        <h2 className="text-4xl font-bold text-blue-800 mb-6">Education</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold">B.Sc. in Computer Science</h3>
+            <p className="text-sm text-gray-600">Global Wealth, University Nigeria.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Certification in Backend Engineering</h3>
+            <p className="text-sm text-gray-600">Altschool Africa</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Skills Section */}
+      <div className="skills mb-16">
+        <h2 className="text-4xl font-bold text-blue-800 mb-6">Skills</h2>
+        <div className="flex flex-wrap gap-4">
+          {['React', 'Node.js', 'Django', 'TypeScript', 'HTML', 'CSS', 'JavaScript', 'TailwindCSS', 'PostgreSQL', 'Express.js'].map((skill, index) => (
+            <span
+              key={index}
+              className="bg-green-100 text-green-700 text-sm font-medium px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Social Media Section */}
+      <div className="social-links flex my-6">
+        <a href="https://x.com/ifeoluwajohz"><img src={x} alt="Twitter" /></a>
+        <a href="https://github.com/johzcodes"><img src={github} alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/ifeoluwajohz/"><img src={linkedin} alt="LinkedIn" /></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src={email} alt="Email" /></a>
+        <a href="tel:+8026144324"><img src={whatsapp} alt="WhatsApp" /></a>
+        <a href="https://web.facebook.com/profile.php?id=100087388999705"><img src={facebook} alt="Facebook" /></a>
+      </div>
+
+      {/* Achievements Section */}
       <div className="achievements mb-10">
         <button className="text-xl text-purple-900 underline font-normal" onClick={DownloadCv}>Download My CV</button>
       </div>
+
+      {/* Message Section */}
       <div className="message bg-gray-100 p-4 py-8 mb-12">
         <h1 className="text-pink-500 text-3xl submit leading-10 font-bold mb-8">Dm me....</h1>
-        <form onSubmit={handleSubmit} action="">
+        <form onSubmit={handleSubmit}>
           <input value={name} onChange={(e) => setName(e.target.value)} type="text" required className="bg-white text-sm p-2 pr-12 mb-4" placeholder='Your Name...' /><br />
           <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" required className="bg-white text-sm p-2 pr-20 mb-4" placeholder='Email Address...' /><br />
           <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" required className="bg-white text-sm p-2 pb-12 mb-4 w-72" placeholder='Message...' /><br />
@@ -88,11 +123,11 @@ const About = () => {
             {loading ? 'Submitting...' : 'Submit'}
           </button>
         </form>
-        {success && <p className="text-green-500 mt-2">{success}</p>}  {/* Display success message */}
-        {error && <p className="text-red-500 mt-2">{error}</p>}  {/* Display error message */}
+        {success && <p className="text-green-500 mt-2">{success}</p>}
+        {error && <p className="text-red-500 mt-2">{error}</p>}
       </div>
     </div>
   );
-}
+};
 
 export default About;

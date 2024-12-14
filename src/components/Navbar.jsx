@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
         <div className="menu-bar flex justify-evenly">
           <Link to="/"><p>Home</p></Link>
-          <Link to="/About"><p>About Me</p></Link>
+          <Link to="/approach"><p>Experiences</p></Link>
           <Link to="/projects"><p>Projects</p></Link>
 
         </div>

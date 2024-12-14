@@ -1,44 +1,60 @@
-import '../styles/style.css'
-import NFT from '../assets/NFT.png'
-import ECORENT from '../assets/ECORENT.png'
+import '../styles/style.css';
+import { Link } from 'react-router-dom';
+import features from '../data/data.json';
+import NFT from '../assets/NFT.png';
+import ECORENT from '../assets/ECORENT.png';
 
 const Projects = () => {
+  const infos = features.data;
+
   return (
-    <div>
-      <h1 className="job text-5xl mt-12 font-semibold mb-12">My Recent <span className="text-purple-500 underline">Projects</span></h1>
-      <div className="projects">
-        <div className="box">
-          <h3 className="my-8 text-lg">Project Name : <span className="font-normal text-purple-500 underline "><a href="https://artprimes.vercel.app/">Artprimes</a></span></h3>
-          <p className="text-sm mb-4 leading-7 font-semibold">Description : <span className="font-normal">An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced. <br /> It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c</span></p>
-          <p className="text-sm leading-7 font-semibold">Stacks : <span className="font-normal">REACTJS, SCSS, NODEJS, MONGODB</span></p>
-          <p className="text-purple-500 mt-4 underline"><a href="https://artprimes.vercel.app/">Visit Link</a></p>
-        </div>
-        <div className="box DRAG-APP">
-          <h3 className="my-8 text-lg">Project Name : <span className="font-normal text-purple-500 underline ">Draggable Note App</span></h3>
-          <p className="text-sm mb-4 leading-7 font-semibold">Description : <span className="font-normal">An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced. <br /> It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c</span></p>
-          <p className="text-sm leading-7 font-semibold">Stacks : <span className="font-normal">HTML, CSS, JAVASCRIPT</span></p>
-          <p className="text-purple-500 mt-4 underline"><a href="https://draggablenoteapplication.netlify.app/">Visit Link</a></p>
-          
-        </div>
+    <div className="container mx-auto px-4">
+      <h1 className="job text-4xl sm:text-5xl mt-12 font-semibold mb-12 text-center">
+        My Recent <span className="text-purple-500 underline">Projects</span>
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {infos.map((info) => (
+          <div
+            key={info.id}
+            className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          >
+            <img
+              src={info.imgurl}
+              alt={info.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">{info.title}</h3>
+              <p className="text-gray-600 mb-4">{info.description}</p>
+              <p className="text-sm text-purple-500 font-medium">{info.stack}</p>
+              <Link
+                to={`${info.link}`}
+                className="inline-block mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition duration-300"
+              >
+                View Project
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="projects">
-        <div className="box">
-          <h3 className="my-8 text-lg">Project Name : <span className="font-normal text-purple-500 underline "><a href="https://draggablenoteapplication.netlify.app/">Draggable Note App</a></span></h3>
-          <p className="text-sm mb-4 leading-7 font-semibold">Description : <span className="font-normal">An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced. <br /> It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c</span></p>
-          <p className="text-sm leading-7 font-semibold">Stacks : <span className="font-normal">REACTJS, SCSS, NODEJS, MONGODB</span></p>
-          <p className="text-purple-500 mt-4 underline"><a href="https://draggablenoteapplication.netlify.app/">Visit Link</a></p>
 
-        </div>
-      </div>
-      <h1 className="job text-5xl mt-20 font-semibold mb-12">My Job <span className="text-purple-500 underline">Experience</span></h1>
-      <div className="works flex mb-20">
-        <img src={NFT} alt="" className="work" />
-        <img src={ECORENT} alt="" className="work" />
-
-
+      <h1 className="job text-4xl sm:text-5xl mt-20 font-semibold mb-12 text-center">
+        Volunteer <span className="text-purple-500 underline">Jobs</span>
+      </h1>
+      <div className="works grid grid-cols-1 sm:grid-cols-2 gap-8 mb-20">
+        <img
+          src={NFT}
+          alt="NFT Experience"
+          className="work rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        />
+        <img
+          src={ECORENT}
+          alt="ECORENT Experience"
+          className="work rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
