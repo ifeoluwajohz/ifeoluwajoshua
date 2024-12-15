@@ -3,7 +3,7 @@ import '../styles/style.css';
 import github from  "../assets/github.png";
 import x from '../assets/twitter.png';
 import facebook from '../assets/facebook.png';
-import email from '../assets/email.png';
+import emails from '../assets/email.png';
 import whatsapp from '../assets/whatsapp.png';
 import linkedin from '../assets/linkedin.png';
 import Resume from '../assets/Resume.pdf';
@@ -102,7 +102,7 @@ const About = () => {
         <a href="https://x.com/ifeoluwajohz"><img src={x} alt="Twitter" /></a>
         <a href="https://github.com/johzcodes"><img src={github} alt="GitHub" /></a>
         <a href="https://www.linkedin.com/in/ifeoluwajohz/"><img src={linkedin} alt="LinkedIn" /></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox"><img src={email} alt="Email" /></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src={emails} alt="Email" /></a>
         <a href="tel:+8026144324"><img src={whatsapp} alt="WhatsApp" /></a>
         <a href="https://web.facebook.com/profile.php?id=100087388999705"><img src={facebook} alt="Facebook" /></a>
       </div>
