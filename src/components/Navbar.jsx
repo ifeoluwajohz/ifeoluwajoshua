@@ -13,12 +13,11 @@ const Navbar = () => {
         </Link>
         <div className="menu-bar flex justify-evenly">
           <Link to="/"><p>Home</p></Link>
-          <Link to="/approach"><p>Experiences</p></Link>
-          <Link to="/projects"><p>Projects</p></Link>
+          <Link to="/projects"><p>Projects & Experiences</p></Link>
 
         </div>
         <div className="connect">
-          <a href="https://github.com/johzcodes">
+          <a href="https://github.com/ifeoluwajohz">
           <img src={github} alt="" className="w-8" />
           </a>
         </div>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import features from '../data/data.json';
 import NFT from '../assets/NFT.png';
 import ECORENT from '../assets/ECORENT.png';
+import Approach from './Approach';
+
 
 const Projects = () => {
   const infos = features.data;
@@ -37,6 +39,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <Approach />
 
       <h1 className="job text-4xl sm:text-5xl mt-20 font-semibold mb-12 text-center">
         Volunteer <span className="text-purple-500 underline">Jobs</span>

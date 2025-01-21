@@ -97,16 +97,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Social Media Section */}
-      <div className="social-links flex my-6">
-        <a href="https://x.com/ifeoluwajohz"><img src={x} alt="Twitter" /></a>
-        <a href="https://github.com/johzcodes"><img src={github} alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/ifeoluwajohz/"><img src={linkedin} alt="LinkedIn" /></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox"><img src={emails} alt="Email" /></a>
-        <a href="tel:+8026144324"><img src={whatsapp} alt="WhatsApp" /></a>
-        <a href="https://web.facebook.com/profile.php?id=100087388999705"><img src={facebook} alt="Facebook" /></a>
-      </div>
-
+      
       {/* Achievements Section */}
       <div className="achievements mb-10">
         <button className="text-xl text-purple-900 underline font-normal" onClick={DownloadCv}>Download My CV</button>

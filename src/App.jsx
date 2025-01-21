@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
 import About from './components/About';
-import Approach from './components/Approach';
 
 function App() {
     const [isLoadingApp, setIsLoadingApp] = useState(true);
@@ -33,26 +32,19 @@ function App() {
               About Me
           </NavLink>
           <NavLink
-            to="/approach"
-            className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
-          >
-            Experiences
-          </NavLink>
-          <NavLink
             to="/projects"
             className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
           >
-            Projects
+            Projects & Experiences
           </NavLink>
         </div>
         <Routes>
           <Route path="/" element={<Navigate to="/about" />} />
           <Route path="/about" element={<About />} />
-          <Route path="/approach" element={<Approach />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
         <p className="text-center mb-4">
-          &copy; copyright 2024 Isreal Ifeoluwa Joshua
+          &copy; copyright {new Date().getFullYear()} Isreal Ifeoluwa Joshua
         </p>
     </Router>
       
