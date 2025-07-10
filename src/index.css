@@ -1,3 +1,13 @@
+@import "@radix-ui/themes/styles.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} 

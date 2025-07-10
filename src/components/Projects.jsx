@@ -1,4 +1,4 @@
-import '../styles/style.css';
+// import '../styles/style.css';
 import { Link } from 'react-router-dom';
 import features from '../data/data.json';
 import NFT from '../assets/NFT.png';

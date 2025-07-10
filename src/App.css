@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 body{
-    margin: 0px 100px;
+  margin: 0px 100px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #000000; /* Optional: Set a background color */
+  color: white;
 }
 /* App.css */
 

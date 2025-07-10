@@ -16,33 +16,15 @@ function App() {
     }, 6000);
 
     return (
-
-      <div className="App">
+      <div className="App font-josefin bg-black text-white">
       <LoadingScreen />
       {!isLoadingApp && 
       
       <Router>
         <Navbar />
         <Intro />
-        <div className="flex justify-between mt-16">
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
-          >
-              About Me
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
-          >
-            Projects & Experiences
-          </NavLink>
-        </div>
-        <Routes>
-          <Route path="/" element={<Navigate to="/about" />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <About />
+        <Projects />
         <p className="text-center mb-4">
           &copy; copyright {new Date().getFullYear()} Isreal Ifeoluwa Joshua
         </p>

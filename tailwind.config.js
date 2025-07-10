@@ -13,7 +13,11 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      josefin: ['"Josefin Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

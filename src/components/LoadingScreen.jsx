@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import videoSrc from '../assets/intro_video.mp4';
-import '../styles/style.css'
+// import '../styles/style.css'
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
