@@ -1,23 +1,14 @@
 import React, { useState } from "react";
 // import '../styles/style.css'
 import emoji from "../assets/emoji.png";
-import github from "../assets/github.png";
-import x from "../assets/twitter.png";
-import facebook from "../assets/facebook.png";
-import emails from "../assets/email.png";
-import whatsapp from "../assets/whatsapp.png";
-import linkedin from "../assets/linkedin.png";
+import me from "../../public/Myself.png"
 import { Button, IconButton } from "@radix-ui/themes";
-import { Icon } from "@iconify/react";
 import {
-  FaceIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
-  MixerVerticalIcon,
-  PieChartIcon,
-  RowsIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+
 
 const Intro = () => {
   const [email, setEmail] = useState("");
@@ -62,14 +53,14 @@ const Intro = () => {
     <>
       <section>
         <div className="flex flex-col items-center text-center justify-center w-full md:gap-5 gap-3 md:max-w-3xl mx-auto my-auto">
-          <IconButton />
+          <img src={me} className="md:w-36 w-24 rounded-full" alt="" />
           <h1 className="font-medium flex items-center gap-2  text-lg">
             Hi I'm{" Joshua"},
             <span>
               <img className="w-3" src={emoji} alt="" />
             </span>
           </h1>
-          <h1 className="font-bold text-2xl md:text-5xl md:mb-3 mb-1">
+          <h1 className="font-bold text-3xl md:text-5xl md:mb-3 mb-1">
             Creative{" "}
             <span className="relative inline-block md:px-4 px-2">
               {/* Background rotated */}
@@ -109,8 +100,8 @@ const Intro = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -128,8 +119,8 @@ const Intro = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -146,8 +137,8 @@ const Intro = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
