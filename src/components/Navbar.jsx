@@ -15,8 +15,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <section className="relative">
-        <div className="flex justify-between my-8 md:mb-16 mb-24 items-center text-center">
+      <section className="relative bg-black text-white px-5 md:px-20">
+        <div className="flex justify-between py-8 md:pb-16 pb-24 items-center text-center ">
           <a href="https://github.com/ifeoluwajohz">
             <GitHubLogoIcon className="w-6 h-6" />
           </a>

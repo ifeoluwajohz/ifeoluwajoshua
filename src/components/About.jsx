@@ -54,92 +54,44 @@ const About = () => {
   };
 
   return (
-    <div>
-      <div className="mb-16">
-        <h1 className="text-5xl mt-12 font-semibold mb-8">
-          About <span className="text-green-500">Me.</span>
-        </h1>
-        <p className="md:text-base text-xs leading-8 mb-16">
-          Israel Ifeoluwa Joshua is a results-driven software developer with a
-          strong command of both frontend and backend technologies. He
-          specializes in building high-performance web applications using tools
-          like Next.js, React, TailwindCSS, SCSS, JavaScript, TypeScript,
-          Node.js, and Django. With a sharp eye for detail and a deep
-          understanding of user experience, Joshua crafts intuitive, responsive
-          interfaces while architecting scalable backend systems that ensure
-          reliability and performance. His strength lies in bridging the gap
-          between design and functionality — turning complex problems into
-          elegant, efficient solutions. Passionate about collaboration, Joshua
-          has worked alongside cross-functional teams, contributing to every
-          stage of the development cycle — from planning and architecture to
-          deployment and optimization. His work consistently focuses on
-          delivering value, meeting client goals, and driving business growth
-          through technology.
-        </p>
-      </div>
-
-      {/* Education Section */}
-      <div className=" mb-16">
-        <h2 className="text-4xl font-bold text-blue-800 mb-6">Education</h2>
-        <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold">B.Sc. in Computer Science</h3>
-            <p className="text-sm text-gray-600">
-              Global Wealth, University Nigeria.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">
-              Certification in Backend Engineering
-            </h3>
-            <p className="text-sm text-gray-600">Altschool Africa</p>
-          </div>
-        </div>
-      </div>
+    <div className="bg-gray-100 text-black px-8 md:p-20 pb-12 py-20">
 
       {/* Skills Section */}
-      <div className="skills mb-16">
-        <h2 className="text-4xl font-bold text-blue-800 mb-6">Skills</h2>
-        <div className="flex flex-wrap gap-4">
-          {[
-            "Next.js",
-            "SCSS",
-            "React",
-            "Node.js",
-            "Django",
-            "TypeScript",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "TailwindCSS",
-            "PostgreSQL",
-            "Express.js",
-            "Nextjs",
-            "Prisma",
-            "MongoDb"
-          ].map((skill, index) => (
-            <span
-              key={index}
-              className="bg-slate-100 text-blue-700 text-sm font-medium px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition"
-            >
-              {skill}
-            </span>
-          ))}
+      <div className="flex flex-col items-center gap-4 px-5 md:px-10">
+        <h2 className="text-4xl font-bold text-blue-700 mb-2 bg-blue-200">Specializing in</h2>
+        <p className="text-center text-sm md:text-base px-0 md:px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum autem odit, dolore repudiandae labore impedit et magnam eligendi fugit deleniti!</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 my-5 ">
+          <div className="bg-blue-500 text-gray-100 p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
+            <h3 className="text-4xl font-semibold ">Frontend Development.</h3>
+            <p className="text-gray-50 text-sm">Building responsive and dynamic websites Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+           <div className="w-full flex justify-end">
+              <button className="underline">Learn More</button>
+            </div>
+          </div>
+          <div className="bg-blue-200 text-blue-800 p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
+            <h3 className="text-4xl font-semibold ">Backend Development.</h3>
+            <p className="text-gray-600 text-sm">Building responsive and dynamic websites Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+           <div className="w-full flex justify-end">
+              <button className="underline">Learn More</button>
+            </div>
+          </div>
+          <div className=" bg-white text-blue-700 p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
+            <h3 className="text-4xl font-semibold ">Ui\Ux Designs.</h3>
+            <p className="text-gray-600 text-sm">Building responsive and dynamic websites Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+           <div className="w-full flex justify-end">
+              <button className="underline">Learn More</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Achievements Section */}
-      <div className="achievements mb-10">
-        <button
-          className="text-xl text-purple-900 underline font-normal"
-          onClick={DownloadCv}
-        >
-          Download My CV
-        </button>
+      {/* Projects Section
+      <div className="flex flex-col items-center gap-4 px-5 md:px-10">
+        <h3>Case Study</h3>
       </div>
 
       {/* Message Section */}
-      <div className="message bg-gray-100 p-4 py-8 mb-12">
+      {/* <div className="message bg-gray-100 p-4 py-8 mb-12">
         <h1 className="text-pink-500 text-3xl submit leading-10 font-bold mb-8">
           Dm me....
         </h1>
@@ -181,7 +133,7 @@ const About = () => {
         </form>
         {success && <p className="text-green-500 mt-2">{success}</p>}
         {error && <p className="text-red-500 mt-2">{error}</p>}
-      </div>
+      </div>  */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import './index.css';
 import './App.css';
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
@@ -16,7 +16,7 @@ function App() {
     }, 6000);
 
     return (
-      <div className="App font-josefin bg-black text-white">
+      <div className="font-josefin">
       <LoadingScreen />
       {!isLoadingApp && 
       

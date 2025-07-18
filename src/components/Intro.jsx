@@ -51,8 +51,8 @@ const Intro = () => {
   };
   return (
     <>
-      <section>
-        <div className="flex flex-col items-center text-center justify-center w-full md:gap-5 gap-3 md:max-w-3xl mx-auto my-auto">
+      <section className="bg-black text-white md:px-4 px-3 md:py-16 py-2 pb-12">
+        <div className="flex flex-col items-center text-center justify-center w-full md:gap-5 gap-3 md:max-w-3xl mx-auto ">
           <img src={me} className="md:w-36 w-24 rounded-full" alt="" />
           <h1 className="font-medium flex items-center gap-2  text-lg">
             Hi I'm{" Joshua"},
