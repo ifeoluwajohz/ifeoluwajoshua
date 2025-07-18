@@ -18,10 +18,10 @@ const Projects = () => {
   const currentProject = infos[currentIndex];
 
   return (
-    <div className="bg-white text-gray-800 md:p-20 py-20 md:mx-20 mx-8">
-      <section className="projects flex flex-col items-center justify-center gap-5">
+    <div className="bg-white text-purple-800 md:p-20 py-20 md:mx-20 mx-8">
+      <section className="projects flex flex-col items-start justify-center gap-5">
         <h3 className="md:text-6xl text-4xl font-bold">Case Study</h3>
-        <p className="text-center text-sm md:text-base">
+        <p className="text-sm md:text-base text-gray-600 mb-6">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum
           ratione incidunt, veritatis, beatae ullam enim, totam minus labore
           accusamus fugiat error suscipit nihil nam cupiditate dolorem quasi
@@ -31,7 +31,7 @@ const Projects = () => {
         {/* Carousel container */}
         <div className="relative w-full h-80 overflow-hidden">
           <img
-            src={currentProject.imageurl}
+            src={currentProject.imgurl}
             alt={currentProject.title}
             className="w-full h-full object-cover rounded-br-3xl absolute top-0 left-0 shadow-md transition duration-500"
           />

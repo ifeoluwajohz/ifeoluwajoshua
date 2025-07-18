@@ -1,9 +1,44 @@
 {
-    "data" : [
-        {"id" : 1, "imgurl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "title" :"Zorra", "description" : "Zorra is an e-commerce platform dedicated to delivering high-quality products with a seamless shopping experience. Built with user convenience in mind, Zorra offers a wide range of items, intuitive navigation, and secure checkout, empowering customers to shop confidently and efficiently.","stack": "REACTJS, TAILWIND, TYPESCRIPT, NODEJS, FIREBASE, POSTGRESQL", "link": "https://zorratheseller.vercel.app/"},
-        {"id" : 2, "imgurl": "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "title" :"Virall", "description" : "Virall is a digital agency specializing in crafting innovative web solutions and digital strategies for businesses. From eye-catching website designs to tailored marketing campaigns, Virall helps brands establish a powerful online presence and achieve their digital goals with precision and creativity." , "stack": "REACTJS, TAILWIND, EXPRESS, MONGODB", "link": "https://virall.netlify.app/"},
-        {"id" : 3, "imgurl": "https://img.freepik.com/free-photo/front-view-woman-posing-her-office-laptop_23-2148908837.jpg?t=st=1730713177~exp=1730716777~hmac=15b3cecd439de353e0cc5d50b3aad50629c9ba2641341b0c107a2ba847f6c97f&w=740", "title" :"Artprimes", "description" : "An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced.  It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c" , "stack": "REACTJS, SCSS, NODEJS, MONGODB", "link": "https://virall.netlify.app/"},
-        {"id" : 4, "imgurl": "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "title" :"The Event", "description" : "An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced. <br /> It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c" , "stack": "REACTJS, SCSS, NODEJS, MONGODB", "link": "https://virall.netlify.app/"},
-        {"id" : 5, "imgurl": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "title": "Spanish Hotel", "description": "Spanish Hotel is a full-featured hotel management platform built for ease of reservations, room management, and customer interaction. Users can view room types, make online bookings, and receive real-time updates. The backend supports automated room status tracking, admin tools, and dynamic pricing controls. Designed with responsiveness and accessibility in mind.", "stack": "NEXTJS, TAILWINDCSS, SHADCN UI, POSTGRESQL PRISMA, SUPABSE","link": "https://spanish-hotel.vercel.app/"}
-   ]
+  "data": [
+    {
+      "id": 1,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//promaket.png",
+      "title": "ProMarket",
+      "description": "Zorra is an e-commerce platform dedicated to delivering high-quality products with a seamless shopping experience. Built with user convenience in mind, Zorra offers a wide range of items, intuitive navigation, and secure checkout, empowering customers to shop confidently and efficiently.",
+      "stack": "REACTJS, TAILWIND, TYPESCRIPT, NODEJS, FIREBASE, POSTGRESQL",
+      "link": "https://promaketlinksandservices.ng/"
+    },
+    {
+      "id": 2,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//virall.png",
+      "title": "Virall",
+      "description": "Virall is a digital agency specializing in crafting innovative web solutions and digital strategies for businesses. From eye-catching website designs to tailored marketing campaigns, Virall helps brands establish a powerful online presence and achieve their digital goals with precision and creativity.",
+      "stack": "REACTJS, TAILWIND, EXPRESS, MONGODB",
+      "link": "https://virall.netlify.app/"
+    },
+    {
+      "id": 3,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//turban.png",
+      "title": "Turban",
+      "description": "An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced.  It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c",
+      "stack": "REACTJS, SCSS, NODEJS, MONGODB",
+      "link": "https://startup-ochre-kappa.vercel.app/"
+    },
+    {
+      "id": 4,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//theevent.png",
+      "title": "The Event",
+      "description": "An Eccomerce Website Where buyers can meet sellers and negotiate price and place orders. The project is still ongoing and its open sourced. <br /> It's features involve user authetications, monthly newsletter, Shoping Cart, Crud Requests e.t.c",
+      "stack": "REACTJS, SCSS, NODEJS, MONGODB",
+      "link": "https://theevent-flax.vercel.app/"
+    },
+    {
+      "id": 5,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//spanish.png",
+      "title": "Spanish Hotel",
+      "description": "Spanish Hotel is a full-featured hotel management platform built for ease of reservations, room management, and customer interaction. Users can view room types, make online bookings, and receive real-time updates. The backend supports automated room status tracking, admin tools, and dynamic pricing controls. Designed with responsiveness and accessibility in mind.",
+      "stack": "NEXTJS, TAILWINDCSS, SHADCN UI, POSTGRESQL PRISMA, SUPABSE",
+      "link": "https://spanishhotel.ng/"
+    }
+  ]
 }
