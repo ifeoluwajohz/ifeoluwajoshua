@@ -59,31 +59,31 @@ function App() {
           >
             <a
               href="/"
-              className="block transition-all duration-1000 px-1 md:px-4 py-2 mx-6 md:mx-8 font-medium hover:text-gray-900 hover:bg-gray-100 focus:underline mt-4"
+              className="block transition-all duration-500 px-1 md:px-4 py-2 mx-6 md:mx-8 font-medium hover:text-gray-900 hover:bg-gray-100 focus:underline mt-4"
             >
               Home
             </a>
             <a
               href="#About_me"
-              className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
+              className="block transition-all duration-500 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
             >
               About me
             </a>
             <a
               href="#My_skill"
-              className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
+              className="block transition-all duration-500 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
             >
               My Skills
             </a>
             <a
               href="#Projects"
-              className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
+              className="block transition-all duration-500 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
             >
               Projects
             </a>
             <a
-              href="/previous-project"
-              className="block transition-all duration-1000 px-1 md:px-4 mx-6 my-1 md:mx-8 font-medium py-2 text-center bg-gray-100 hover:bg-gray-200 text-gray-800 focus:underline mb-4"
+              href="https://x.com/ifeoluwajohz"
+              className="block transition-all duration-500 px-1 md:px-4 mx-6 my-1 md:mx-8 font-medium py-2 text-center bg-pink-500 hover:bg-pink-600 text-gray-50 focus:underline mb-4"
             >
               Hire Me
             </a>
