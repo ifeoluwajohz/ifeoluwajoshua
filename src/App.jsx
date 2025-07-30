@@ -1,39 +1,20 @@
-import './index.css';
-import './App.css';
-import { useState } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
-import LoadingScreen from './components/LoadingScreen';
-import Navbar from './components/Navbar';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
-import About from './components/About';
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RippleLoader from "./components/RippleLoader";
+
+import Home from "./components/Home";
 
 function App() {
-    const [isLoadingApp, setIsLoadingApp] = useState(true);
-
-    setTimeout(() => {
-      setIsLoadingApp(false);
-    }, 6000);
-
-    return (
-      <div className="font-josefin">
-      <LoadingScreen />
-      {!isLoadingApp && 
-      
+  return (
+    <div className="font-josefin">
       <Router>
-        <Navbar />
-        <Intro />
-        <About />
-        <Projects />
-        <p className="text-center mb-4">
-          &copy; copyright {new Date().getFullYear()} Isreal Ifeoluwa Joshua
+        <Home />
+        <p className="text-center text-xs   bg-black text-white py-2 px-10">
+           copyright &copy; Isreal Ifeoluwa Joshua 2023 - {new Date().getFullYear()} All Rights Reserved.
         </p>
-    </Router>
-      
-      
-      }
-      </div>
-    );
+      </Router>
+    </div>
+  );
 }
 
 export default App;
