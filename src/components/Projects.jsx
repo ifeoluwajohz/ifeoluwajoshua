@@ -2,7 +2,7 @@ import { useState } from "react";
 import features from "../data/data.json";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { Button } from "@radix-ui/themes";
-// import { Button } from "@/components/ui/button"; // Assuming shadcn or Tailwind styled button
+ // Assuming SkillInfo is a page component for detailed view
 
 const Projects = () => {
   const infos = features.data;

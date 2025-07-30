@@ -40,5 +40,53 @@
       "stack": "NEXTJS, TAILWINDCSS, SHADCN UI, POSTGRESQL PRISMA, SUPABSE",
       "link": "https://spanishhotel.ng/"
     }
+  ],
+
+  "skill": [
+    {
+      "id": 1,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//html.png",
+      "title": "Frontend Development",
+      "description": "My approach to frontend development combines creativity with precision. Using HTML to structure content, I ensure semantic and accessible layouts that form the foundation of responsive web experiences. With CSS and Sass, I design sleek interfaces that are both visually engaging and performance-optimized. JavaScript allows me to introduce dynamic behavior and interactivity, bringing websites to life. I use React to build fast, component-based interfaces that scale efficiently and deliver a smooth user experience. For complex applications, I integrate frameworks like Next.js to enable server-side rendering and SEO-friendly architecture. I also harness reusable UI components and hooks to accelerate development and reduce code duplication. Each project I handle is designed mobile-first, ensuring seamless performance across all devices. Whether it’s building marketing sites or full-fledged web apps, I bring an eye for detail and a strong understanding of user needs to every frontend I build.",
+      "icons": [
+        "DiHtml5",
+        "DiCss3",
+        "DiSass",
+        "DiJsBadge",
+        "DiReact",
+        "DiNodejsSmall",
+        "DiNextjs"
+      ]
+    },
+    {
+      "id": 2,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//css.png",
+      "title": "Backend Development",
+      "description": "In backend development, I architect the logic that powers high-performance web applications. I use Node.js as the backbone of my server-side code, ensuring event-driven, scalable APIs. Express.js helps me manage routes, middleware, and error handling with clean, modular code structures. I handle data efficiently using MongoDB, PostgreSQL, or MySQL, depending on project needs, and apply ORMs like Prisma for clean data querying and schema migration. For authentication and user sessions, I implement secure JWT-based systems and Firebase when real-time sync or serverless backend is required. My backend workflow ensures robust error handling, high-level security, and clean documentation. I focus on RESTful design principles and can also implement GraphQL when needed. From processing form data to enabling AI-driven features or payment integrations, I make sure the backend is reliable, scalable, and easy to maintain. Every backend I build is designed to work in harmony with the frontend for a smooth user experience.",
+      "icons": [
+        "DiNodejsSmall",
+        "DiExpress",
+        "DiMongodb",
+        "DiPostgresql",
+        "DiMysql",
+        "DiFirebase",
+        "DiPrisma"
+      ]
+    },
+    {
+      "id": 3,
+      "imgurl": "https://ooozydejaggapckmuidd.supabase.co/storage/v1/object/public/spanish-storage-bucket//javascript.png",
+      "title": "Web & Graphic Design",
+      "description": "My approach to web and graphic design blends creativity with functionality. Using tools like Figma, Adobe XD, and Canva, I create intuitive interfaces that align with the brand’s identity while ensuring excellent user experience. I begin with wireframes and mood boards to explore ideas, then iterate on layouts, color palettes, and typography to bring concepts to life. For logos, social media posts, and brand visuals, I rely on Adobe Illustrator and Photoshop to craft sharp, high-resolution designs that capture attention. I understand the balance between aesthetic design and functional UX, making sure every design element serves a purpose. My designs are mobile-friendly, accessibility-conscious, and created with developers in mind—ensuring smooth handoffs for implementation. Whether I’m prototyping a landing page or creating brand assets, I focus on delivering cohesive, visually striking outputs that help businesses communicate clearly, build trust, and convert users effectively across all platforms.",
+      "icons": [
+        "DiFigma",
+        "DiAdobeXd",
+        "DiSketch",
+        "DiInvision",
+        "DiCanva",
+        "DiPhotoshop",
+        "DiIllustrator"
+      ]
+    }
   ]
 }

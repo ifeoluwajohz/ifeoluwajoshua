@@ -5,10 +5,9 @@ import {
 } from "@radix-ui/react-icons";
 import { Button } from "@radix-ui/themes";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Skills from "../data/data.json";
+
 import {
-  LuAlignRight,
-  LuSquareX,
   LuPhoneCall,
   LuFacebook,
 } from "react-icons/lu";
@@ -16,85 +15,13 @@ import {
 import emoji from "../assets/emoji.png";
 import me from "../../public/Myself.png";
 import Projects from "./Projects";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const skill = Skills.skill;
+  console.log(skill);
   return (
     <div className="">
-      <section className="Navbar bg-black fixed top-0 right-0 w-full z-50 text-white px-5 md:px-20">
-        <div className="flex justify-between py-4 items-center text-center ">
-          <a href="https://github.com/ifeoluwajohz">
-            <GitHubLogoIcon className="w-6 h-6" />
-          </a>
-          <div className="hidden md:flex gap-5 justify-center items-center">
-            <a href="/">
-              <p>Home</p>
-            </a>
-            <a href="#About_me">
-              <p>About Me</p>
-            </a>
-            <a href="#My_skill">
-              <p>My Skills</p>
-            </a>
-            <a href="#Projects">
-              <p>Projects</p>
-            </a>
-          </div>
-          <div className="hidden md:block">
-            <Button className="font-josefin cursor-pointer">Hire Me</Button>
-          </div>
-          <div className="md:hidden flex items-center gap-4">
-            <button onClick={toggleMenu} className=" focus:border">
-              {isOpen ? (
-                <LuSquareX className="w-6 text-gray-50 focus:border-0" />
-              ) : (
-                <LuAlignRight className="w-6 text-gray-50 focus:border-0" />
-              )}
-            </button>
-          </div>
-        </div>
-        <div
-          className={`lg:hidden transition-all duration-700 ease-in-out bg-gray-950 text-blck absolute top-12 left-0 right-0 z-50 shadow-md ${
-            isOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
-          }`}
-        >
-          <a
-            href="/"
-            className="block transition-all duration-1000 px-1 md:px-4 py-2 mx-6 md:mx-8 font-medium hover:text-gray-900 hover:bg-gray-100 focus:underline mt-4"
-          >
-            Home
-          </a>
-          <a
-            href="#About_me"
-            className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
-          >
-            About me
-          </a>
-          <a
-            href="#My_skill"
-            className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
-          >
-            My Skills
-          </a>
-          <a
-            href="#Projects"
-            className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 hover:text-gray-900 hover:bg-gray-100 focus:underline"
-          >
-            Projects
-          </a>
-          <a
-            href="/previous-project"
-            className="block transition-all duration-1000 px-1 md:px-4 mx-6 md:mx-8 font-medium py-2 text-center bg-gray-100 hover:bg-gray-200 text-gray-800 focus:underline mb-4"
-          >
-            Hire Me
-          </a>
-        </div>
-      </section>
-
       <section
         id="About_me"
         className="About_me bg-black  text-white md:px-4 px-3 py-20 pt-32 "
@@ -186,44 +113,31 @@ const Home = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 my-5 ">
-            <div className="bg-gradient-to-r bg-transparent from-blue-500 to-blue-200 text-gray-100 p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
-              <h3 className="text-4xl font-semibold ">Frontend Development.</h3>
-              <p className="text-gray-50 text-sm">
-                Crafting responsive, fast, and interactive user interfaces using
-                modern frontend technologies.
-              </p>
-              <div className="w-full flex justify-end">
+            {skill.map((item, index) => (
+              <div
+                key={index}
+                className=" bg-blue-400  text-white p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col"
+              >
+                <h3 className="text-4xl font-semibold">{item.title}.</h3>
+                <p className="text-white text-sm line-clamp-4">{item.description}</p>
+                <Link to={`/skills/${item.id}`} className="w-full flex justify-end">
                 <button className="underline">Learn More</button>
+              </Link>
               </div>
-            </div>
-            <div className="bg-gradient-to-r bg-transparent from-blue-200 to-pink-200 text-white p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
-              <h3 className="text-4xl font-semibold ">Backend Development.</h3>
-              <p className=" text-sm">
-                Building secure, scalable server logic and APIs to power
-                full-stack web applications.
-              </p>
-              <div className="w-full flex justify-end">
-                <button className="underline">Learn More</button>
-              </div>
-            </div>
-            <div className=" bg-gradient-to-r bg-transparent from-pink-200 to-pink-500 text-white p-10 rounded-br-3xl shadow-md h-80 items-start justify-between flex flex-col">
-              <h3 className="text-4xl font-semibold ">Ui\Ux Designs.</h3>
-              <p className=" text-sm">
-                Designing intuitive, beautiful interfaces focused on seamless
-                user experiences and accessibility.
-              </p>
-              <div className="w-full flex justify-end">
-                <button className="underline">Learn More</button>
-              </div>
-            </div>
+            ))}
+            
+            
           </div>
         </div>
       </section>
 
-
-      <section id="Projects" className="Projects bg-gray-50 dark:bg-black text-gray-800 dark:text-white md:px-20 px-6 py-16">
+      <section
+        id="Projects"
+        className="Projects bg-gray-50 dark:bg-black text-gray-800 dark:text-white md:px-20 px-6 py-16"
+      >
         <Projects />
       </section>
+      
     </div>
   );
 };

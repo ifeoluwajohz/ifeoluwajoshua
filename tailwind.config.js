@@ -3,7 +3,7 @@ export default {
   content: [
     "./src/App.jsx",
     "./src/components/Home.jsx",
-    "./src/components/Projects.jsx"
+    "./src/pages/SkillInfo.jsx"
 
 
 
