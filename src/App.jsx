@@ -37,7 +37,10 @@ function App() {
               </a>
             </div>
             <div className="hidden md:block">
+              <a
+                href="https://x.com/ifeoluwajohz" >
               <Button className="font-josefin cursor-pointer">Hire Me</Button>
+              </a>
             </div>
             <div className="md:hidden flex items-center gap-4">
               <button onClick={toggleMenu} className=" focus:border">
